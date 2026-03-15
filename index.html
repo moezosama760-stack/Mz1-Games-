@@ -1,139 +1,107 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mz1 Games | متجر حسابات PlayStation</title>
+
+<title>Mz1 Games Store</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-background:linear-gradient(135deg,#020617,#0f172a);
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
 color:white;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:#020617;
-box-shadow:0 0 10px #000;
+background:#000;
+padding:20px;
+text-align:center;
 }
 
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#38bdf8;
+header h1{
+color:#00ff9c;
 }
 
 nav a{
-margin:0 10px;
 color:white;
+margin:10px;
 text-decoration:none;
 }
 
 .hero{
 text-align:center;
-padding:90px 20px;
+padding:60px 20px;
+background:linear-gradient(45deg,#001,#111);
 }
 
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero p{
-color:#94a3b8;
-margin-bottom:25px;
-}
-
-.hero button{
-background:#22c55e;
-border:none;
-padding:15px 30px;
-border-radius:10px;
-font-size:16px;
-color:white;
-cursor:pointer;
+.hero h2{
+font-size:40px;
 }
 
 .products{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
 padding:40px;
 }
 
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
 .card{
-background:#1e293b;
-width:260px;
-border-radius:15px;
-padding:20px;
+background:#1a1a1a;
+border-radius:10px;
+padding:15px;
 text-align:center;
-transition:.3s;
-box-shadow:0 10px 25px rgba(0,0,0,.5);
+transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px) scale(1.05);
+transform:scale(1.05);
 }
 
 .card img{
 width:100%;
 border-radius:10px;
-margin-bottom:15px;
 }
 
 .price{
-color:#38bdf8;
-font-size:20px;
-margin:10px 0;
+color:#00ff9c;
+font-size:22px;
+margin:10px;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+justify-content:center;
 }
 
 .buy{
-display:inline-block;
-background:#22c55e;
-padding:12px 25px;
-border-radius:10px;
-text-decoration:none;
+background:#25D366;
+padding:10px 15px;
+border-radius:6px;
 color:white;
-font-weight:bold;
+text-decoration:none;
 }
 
-.buy:hover{
-background:#16a34a;
-}
-
-.features{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:40px;
-}
-
-.feature{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
-width:220px;
-text-align:center;
+.pay{
+background:#6a00ff;
+padding:10px 15px;
+border-radius:6px;
+color:white;
+text-decoration:none;
 }
 
 footer{
 text-align:center;
-padding:30px;
-background:#020617;
-color:#94a3b8;
+padding:20px;
+background:#000;
+margin-top:40px;
 }
 
 </style>
@@ -143,67 +111,88 @@ color:#94a3b8;
 <body>
 
 <header>
-<div class="logo">🎮 Mz1 Games</div>
-
+<h1>Mz1 Games</h1>
 <nav>
-<a href="#">الرئيسية</a>
-<a href="#products">المنتجات</a>
-<a href="#features">لماذا نحن</a>
+<a href="#">Home</a>
+<a href="#games">Games</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>أفضل متجر لحسابات PlayStation</h1>
-<p>حسابات أصلية • تسليم فوري • دعم سريع</p>
-<button onclick="document.getElementById('products').scrollIntoView()">تصفح المنتجات</button>
+<h2>Best PlayStation Games Store</h2>
+<p>Fast delivery • Trusted store</p>
 </section>
 
-<section class="products" id="products">
+<section class="products" id="games">
+
+<div class="games">
 
 <div class="card">
-<img src="https://i.imgur.com/YQ9Z1Zm.png">
-<h3>حساب PlayStation</h3>
-<p>حساب جاهز يحتوي ألعاب قوية</p>
-<div class="price">600 جنيه</div>
-<a class="buy" href="https://wa.me/201026566677?text=عايز%20اشتري%20حساب">شراء الآن</a>
+<img src="https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_Ragnar%C3%B6k_cover.jpg">
+<h3>God of War Ragnarok</h3>
+<div class="price">850 EGP</div>
+
+<div class="buttons">
+<a class="buy" href="https://wa.me/201026566677?text=I%20want%20God%20of%20War">WhatsApp</a>
+<a class="pay" href="#">InstaPay</a>
+</div>
+
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/4QyZ4Rz.png">
-<h3>PlayStation Plus</h3>
-<p>استمتع باللعب أونلاين وألعاب مجانية</p>
-<div class="price">550 جنيه</div>
-<a class="buy" href="https://wa.me/201026566677?text=عايز%20اشتري%20PlayStation%20Plus">شراء الآن</a>
+<img src="https://upload.wikimedia.org/wikipedia/en/5/51/GTA_V.png">
+<h3>GTA V</h3>
+<div class="price">600 EGP</div>
+
+<div class="buttons">
+<a class="buy" href="https://wa.me/201026566677?text=I%20want%20GTA%205">WhatsApp</a>
+<a class="pay" href="#">InstaPay</a>
 </div>
 
-</section>
-
-<section class="features" id="features">
-
-<div class="feature">
-⚡ تسليم فوري  
-<p>استلم حسابك خلال دقائق</p>
 </div>
 
-<div class="feature">
-🔒 أمان كامل  
-<p>حسابات مضمونة 100%</p>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/FIFA_23_Cover.jpg">
+<h3>EA Sports FC 24</h3>
+<div class="price">700 EGP</div>
+
+<div class="buttons">
+<a class="buy" href="https://wa.me/201026566677?text=I%20want%20FC24">WhatsApp</a>
+<a class="pay" href="#">InstaPay</a>
 </div>
 
-<div class="feature">
-💬 دعم سريع  
-<p>نرد عليك في أسرع وقت</p>
 </div>
 
-<div class="feature">
-💰 أفضل سعر  
-<p>أسعار منافسة للجميع</p>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Spider-Man_PS4_cover.jpg">
+<h3>Marvel Spider Man</h3>
+<div class="price">650 EGP</div>
+
+<div class="buttons">
+<a class="buy" href="https://wa.me/201026566677?text=I%20want%20Spiderman">WhatsApp</a>
+<a class="pay" href="#">InstaPay</a>
+</div>
+
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Call_of_Duty_Modern_Warfare_II_Key_Art.jpg">
+<h3>Call Of Duty MW2</h3>
+<div class="price">750 EGP</div>
+
+<div class="buttons">
+<a class="buy" href="https://wa.me/201026566677?text=I%20want%20COD">WhatsApp</a>
+<a class="pay" href="#">InstaPay</a>
+</div>
+
+</div>
+
 </div>
 
 </section>
 
 <footer>
-© 2026 Mz1 Games — جميع الحقوق محفوظة
+<p>© 2026 Mz1 Games Store</p>
 </footer>
 
 </body>
